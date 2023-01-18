@@ -1,63 +1,236 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #7fffd4;
-    
-}
-header {
-    
-    padding: 30px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    font-family: 'Patrick Hand', cursive;
 }
 
-li, a, button {
+body::before {
+    content: "XS";
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  @media (min-width: 576px) {
+    body::before {
+      content: "SM";
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body::before {
+      content: "MD";
+    }
+  }
+  
+  @media (min-width: 992px) {
+    body::before {
+      content: "LG";
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body::before {
+      content: "XL";
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    body::before {
+      content: "XXL";
+    }
+  }
 
-    font-family: 'Berkshire Swash', cursive;
-    font-weight: 400;
-    font-size: 16px;
-    color: black;
-    text-decoration: blueviolet;
-
+.title-screen-bk{
+    background-image: url('https://seacoastrep.org/wp-content/uploads/2022/06/sea-landscape-for-game-background-design-cartoon-ocean-wave-illustration-blue-water-and-sky-with-clouds-vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.logo{
-    cursor:pointer;
+nav{
+    margin-bottom: 1rem;
 }
 
-.nav_links{
-    list-style: none;
-
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 1rem;
 }
 
-.nav_links li{
+nav a{
     display: inline-block;
-    padding: 0px 20px;
-
+    text-align: center;
+    padding: 3rem 4rem;
+    text-decoration: none;
+    font-size: 2rem;
 }
 
-.nav_links li a{
-    transition: all 0.3 ease 0s;
+nav li{
+    display: inline;
 }
 
-.nav_links li a:hover{
-    color:silver;
+nav img{
+    margin: -3rem; 
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgba(54, 232, 220, 1);
-    border: none;
-    border-radius: 50px;
+button{
+    border:none;
+    color: black;
+    padding: .8rem 1rem;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.4s;
     cursor: pointer;
-    transition: all 0.3 ease 0s;
-
 }
 
-button:hover {
-    background-color: rgba(54, 232, 220, 0.8);;
+button:hover{
+    background-color: lightcoral;
+}
+
+.red{
+    background-color: #F78D78;
+}
+
+.centered{
+    margin-top: 3rem;
+    font-size: 1.4rem;
+}
+
+.title-buttons button{
+    align-items:center ;
+    padding: .75rem 2rem;
+    font-size: 1.75rem;
+    margin: 1rem -1px;
+}
+
+@media(max-width: 1399px) {
+
+    .title-buttons button{
+        padding: .75rem 1rem;
+    }
+}
+
+.title-text h1,p{
+    text-align: center;
+    color: white;
+}
+
+.title-text h1{
+    font-size: 8rem;
+    font-family: 'Berkshire Swash', cursive;
+    padding-top: 10rem;
+}
+
+.title-text p{
+    font-size: 3rem;
+}
+
+.first-body{
+    background-color: #224FF2;
+}
+
+.first-body h2{
+    color: white;
+    font-size: 4.5rem;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.first-body p{
+    font-size: 2rem;
+}
+
+.graph-first-para p{
+    margin-top: 10rem;
+}
+
+.grad-1{
+    background: rgb(25,53,162);
+    background: linear-gradient(0deg, rgba(25,53,162,1) 0%, rgba(34,79,242,1) 100%);
+}
+
+.grad-1 p{
+    margin: 0;
+}
+
+.second-body{
+    background-color: #1935A2;
+}
+
+.second-body h2{
+    color: white;
+    font-size: 4.5rem;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.second-body p{
+    font-size: 2rem;
+}
+
+.graph-second-para p{
+    margin-top: 10rem;
+}
+
+.grad-2{
+    background: rgb(15,27,81);
+    background: linear-gradient(0deg, rgba(15,27,81,1) 0%, rgba(25,53,162,1) 100%);
+}
+
+.grad-2 p{
+    margin: 0;
+}
+
+.third-body{
+    background-color: #0f1b51;
+}
+
+.third-body h2{
+    color: white;
+    font-size: 4.5rem;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.third-body p{
+    font-size: 2rem;
+}
+
+.graph-third-para p{
+    margin-top: 10rem;
+}
+
+.grad-3{
+    background: rgb(15,27,81);
+    background: linear-gradient(180deg, rgba(15,27,81,1) 0%, rgba(8,15,49,1) 100%);
+}
+
+.grad-3 p{
+    margin: 0;
+}
+
+footer{
+    background-color: #080F31;
+    color: white;
+}
+
+footer h3{
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
 }
