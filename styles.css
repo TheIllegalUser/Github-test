@@ -63,9 +63,27 @@ nav ul{
 nav a{
     display: inline-block;
     text-align: center;
-    padding: 3rem 4rem;
+    padding: 3rem 1.4rem;
     text-decoration: none;
     font-size: 2rem;
+    color: #F78D78;
+}
+
+@media(min-width: 992px) {
+
+    nav a{
+        padding: 3rem 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    nav a{
+        padding: 3rem 4rem;
+        color: white;
+        font-size: 2rem;
+    }
 }
 
 nav li{
@@ -73,17 +91,41 @@ nav li{
 }
 
 nav img{
-    margin: -3rem; 
+    margin: -3rem -7rem; 
+    height: 200px;
+}
+
+@media(min-width: 992px){
+
+    nav img{
+        margin: -3rem -3rem;
+        height: 200px;
+    }
+
 }
 
 button{
     border:none;
     color: black;
-    padding: .8rem 1rem;
+    padding: .8rem .8rem;
     text-align: center;
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+@media(min-width: 992px) {
+
+    button{
+        padding: .8rem .8rem;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    button{
+        padding: .8rem 1rem;
+    }
 }
 
 button:hover{
@@ -101,15 +143,29 @@ button:hover{
 
 .title-buttons button{
     align-items:center ;
-    padding: .75rem 2rem;
+    padding: .75rem 1.1rem;
     font-size: 1.75rem;
     margin: 1rem -1px;
 }
 
-@media(max-width: 1399px) {
+@media(min-width: 992px) {
+
+    .title-buttons button{
+        padding: .75rem .4rem;
+    }
+}
+
+@media(min-width: 1200px) {
 
     .title-buttons button{
         padding: .75rem 1rem;
+    }
+}
+
+@media(min-width: 1400px) {
+
+    .title-buttons button{
+        padding: .75rem 2rem;
     }
 }
 
