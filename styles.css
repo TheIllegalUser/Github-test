@@ -45,9 +45,21 @@ body::before {
   }
 
 .title-screen-bk{
-    background-image: url('https://seacoastrep.org/wp-content/uploads/2022/06/sea-landscape-for-game-background-design-cartoon-ocean-wave-illustration-blue-water-and-sky-with-clouds-vector.jpg');
+    background-image: url(img/sea_background_LG.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media(min-width:992px){
+    .title-screen-bk{
+        background-image: url(img/sea_background_LG.png);
+    }
+}
+
+@media(min-width:1200px){
+    .title-screen-bk{
+        background-image: url(img/sea_background_XXL.png);
+    }
 }
 
 nav{
@@ -66,7 +78,7 @@ nav a{
     padding: 3rem 1.4rem;
     text-decoration: none;
     font-size: 2rem;
-    color: #F78D78;
+    color: white;
 }
 
 @media(min-width: 992px) {
@@ -81,7 +93,6 @@ nav a{
 
     nav a{
         padding: 3rem 4rem;
-        color: white;
         font-size: 2rem;
     }
 }
@@ -93,6 +104,15 @@ nav li{
 nav img{
     margin: -3rem -7rem; 
     height: 200px;
+}
+
+@media(min-width: 768px){
+
+    nav img{
+        margin: -3rem -7rem; 
+        height: 200px;
+    }
+
 }
 
 @media(min-width: 992px){
@@ -175,13 +195,34 @@ button:hover{
 }
 
 .title-text h1{
-    font-size: 8rem;
+    font-size: 5rem;
     font-family: 'Berkshire Swash', cursive;
-    padding-top: 10rem;
+    padding-top: 0rem;
+}
+
+@media (min-width: 768px){
+    .title-text h1{
+        padding-top: 0rem;
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .title-text h1{
+        padding-top: 10rem;
+    }
 }
 
 .title-text p{
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px){
+
+    .title-text p{
+        font-size: 3rem;
+    }
+
 }
 
 .first-body{
