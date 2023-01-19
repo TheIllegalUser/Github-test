@@ -1,6 +1,4 @@
 # Github-test
-this is a test(or may just be final)
+Our website sells an experience to dive to the bottom of the mariana trench and back.
 
-
-
-wow we made it a final lol
+In case it isn't obvious, it's impossible to dive to the mariana trench and back, and you will die for every reason imaginable :)
