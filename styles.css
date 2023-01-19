@@ -168,6 +168,7 @@ button:hover{
     margin: 1rem -1px;
 }
 
+
 @media(min-width: 992px) {
 
     .title-buttons button{
@@ -242,8 +243,8 @@ button:hover{
 }
 
 .graph-first-para img{
-    margin-top: 10rem;
-    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-left: -5rem;
 }
 
 .grad-1{
@@ -273,7 +274,7 @@ button:hover{
 
 .graph-second-para img{
     margin-top: 10rem;
-    margin-left: 8rem;
+    margin-left: 10rem;
 }
 
 .grad-2{
@@ -303,7 +304,6 @@ button:hover{
 
 .graph-third-para img{
     margin-top: 10rem;
-    margin-left: 1rem;
 }
 
 .grad-3{
@@ -333,4 +333,10 @@ footer a{
     text-decoration: none;
     color: white;
     font-size: 25px;
+}
+
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
