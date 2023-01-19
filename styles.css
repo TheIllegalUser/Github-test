@@ -241,8 +241,9 @@ button:hover{
     font-size: 2rem;
 }
 
-.graph-first-para p{
+.graph-first-para img{
     margin-top: 10rem;
+    margin-left: 2rem;
 }
 
 .grad-1{
@@ -270,8 +271,9 @@ button:hover{
     font-size: 2rem;
 }
 
-.graph-second-para p{
+.graph-second-para img{
     margin-top: 10rem;
+    margin-left: 8rem;
 }
 
 .grad-2{
@@ -299,8 +301,9 @@ button:hover{
     font-size: 2rem;
 }
 
-.graph-third-para p{
+.graph-third-para img{
     margin-top: 10rem;
+    margin-left: 1rem;
 }
 
 .grad-3{
