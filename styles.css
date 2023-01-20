@@ -223,7 +223,10 @@ button:hover{
     .title-text p{
         font-size: 3rem;
     }
-
+    
+    .title-text .info-para-text{
+        font-size: 2rem;
+    }
 }
 
 .first-body{
@@ -339,4 +342,8 @@ footer img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer a:hover{
+    color: silver;
 }
