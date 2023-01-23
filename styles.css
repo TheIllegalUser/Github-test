@@ -305,6 +305,11 @@ button:hover{
     font-size: 2rem;
 }
 
+.third-body a{
+    color: #F78D78;
+    text-decoration: none;
+}
+
 .graph-third-para img{
     margin-top: 10rem;
 }
@@ -364,4 +369,12 @@ footer a:hover{
 
 .first-body-shop{
     padding-top: 4rem;
+}
+
+.first-body-shop img{
+    height: 10rem;
+}
+
+.first-body-shop .platinum-img img{
+    height: 20rem;
 }
