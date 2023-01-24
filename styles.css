@@ -353,20 +353,6 @@ footer a:hover{
     color: silver;
 }
 
-.bk-text-shop {
-    background-color: #F78D78;
-}
-
-.bk-text-shop a{
-    color: black;
-    text-decoration: none;
-}
-
-.bk-text-shop h3{
-    font-size: 1.9rem;
-    text-align: center;
-}
-
 .first-body-shop{
     padding-top: 4rem;
 }
@@ -376,5 +362,46 @@ footer a:hover{
 }
 
 .first-body-shop .platinum-img img{
-    height: 20rem;
+    height: 10rem;
 }
+
+.card1,.card2,.card3,.card4{
+    background: rgb(34,79,242);
+    background: linear-gradient(135deg, rgba(34,79,242,1) 0%, rgba(15,27,81,1) 100%);
+    box-shadow: 0px 0px 50px #080F31;
+    margin: 1rem;
+}
+
+.card1 img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.card2 img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: .5rem;
+}
+
+.card3 img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: .5rem;
+}
+
+.card4 img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: .5rem;
+}
+
+.card1 p{
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
