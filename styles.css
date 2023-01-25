@@ -365,6 +365,11 @@ footer a:hover{
     height: 10rem;
 }
 
+.first-body-shop a{
+    text-decoration: none;
+    color: #F78D78;
+}
+
 .card1,.card2,.card3,.card4{
     background: rgb(34,79,242);
     background: linear-gradient(135deg, rgba(34,79,242,1) 0%, rgba(15,27,81,1) 100%);
@@ -404,4 +409,3 @@ footer a:hover{
     list-style-type: none;
     text-align: center;
 }
-
