@@ -8,4 +8,16 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+
+hiddenElements.forEach((wrapper) => observer.observe(wrapper));
+
+window.onscroll = function(){
+
+    if(window.scrollY >= 500) { 
+       document.getElementById('bubble').style.opacity = '1';
+    }
+    else if(window.scrollY < 500) {
+        document.getElementById('bubble').style.opacity = '0';
+    }
+ 
+ };

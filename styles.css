@@ -530,6 +530,6 @@ footer a:hover{
     transform: translateY(0);
 }
 
-.delay{
-    transition-delay: 200ms;
+#bubble{
+    opacity: 0;
 }
