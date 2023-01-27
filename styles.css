@@ -249,8 +249,13 @@ button:hover{
 }
 
 .graph-first-para img{
+    height: 80%;
     margin-top: 5rem;
-    margin-left: -5rem;
+    
+}
+
+.graph-first-para2 img{
+    margin-left: 7rem;
 }
 
 .grad-1{
@@ -281,6 +286,11 @@ button:hover{
 .graph-second-para img{
     margin-top: 10rem;
     margin-left: 10rem;
+}
+
+.graph-second-para2 img{
+    margin-right: 0rem;
+    margin-left: 3rem;
 }
 
 .grad-2{
