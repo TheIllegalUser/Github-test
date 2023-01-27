@@ -327,6 +327,11 @@ button:hover{
     margin-top: 10rem;
 }
 
+.graph-third-para2 img{
+    margin-left: 8rem;
+    margin-top: 6rem;
+}
+
 .grad-3{
     background: rgb(15,27,81);
     background: linear-gradient(180deg, rgba(15,27,81,1) 0%, rgba(8,15,49,1) 100%);
