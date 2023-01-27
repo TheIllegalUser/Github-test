@@ -50,6 +50,7 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 3;
+    height: 100vh;
 }
 
 @media(min-width:992px){
@@ -212,7 +213,7 @@ button:hover{
 
 @media (min-width: 1200px){
     .title-text h1{
-        padding-top: 10rem;
+        padding-top: 12rem;
     }
 }
 
