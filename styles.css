@@ -150,11 +150,11 @@ button{
         padding: .8rem 1rem;
     }
 }
-
+/*
 button:hover{
     
 }
-
+*/
 .red{
     background: rgb(244,145,125);
     background: linear-gradient(135deg, rgba(244,145,125,1) 0%, rgba(247,141,120,1) 100%);
