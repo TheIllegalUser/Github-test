@@ -20,4 +20,13 @@ window.onscroll = function(){
         document.getElementById('bubble').style.opacity = '0';
     }
  
- };
+ }; 
+
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+function scrollBar(){
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+}
+
+window.addEventListener('scroll', scrollBar);

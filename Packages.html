@@ -6,7 +6,10 @@
 <link rel="stylesheet" href="styles.css">
 <script defer src="script.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <body>
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
   <section class="title-screen-bk">
   <nav class="nav1">
     <div class="container">
@@ -23,8 +26,8 @@
         </div>
         <div class="d-none d-md-block col-md-4 col-lg-3">
           <div class="centered">
-            <button class="red">sign up</button>
-            <button>Watch Video</button>
+            <button class="red rounded grow">Sign Up</button>
+            <button class="rounded grow" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Watch Video</button>
           </div>
         </div>
       </div>
@@ -63,28 +66,28 @@
     <div class="container hidden">
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-4 rounded card1">
+        <div class="col-4 rounded card1 grow">
           <a href="#"><img src="img/Bronze.png" alt="person1"></a>
-          <p>Basic Amenities<br>Basic Transportation<br>Flippers & Goggles<br><a href="#">More info</a></p>
+          <p>Basic Amenities<br>Basic Transportation<br>Flippers & Goggles<br><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">More info</a></p>
         </div>
         <div class="col-2">
         </div>
-        <div class="col-4 rounded card2">
+        <div class="col-4 rounded card2 grow">
           <a href="#"><img src="img/Silver.png" alt="person2"></a>
-          <p>Everything Included In Bronze<br>1st Class Transportation<br>1st Class Amenities<br><a href="#">More info</a></p>          
+          <p>Everything Included In Bronze<br>1st Class Transportation<br>1st Class Amenities<br><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">More info</a></p>          
         </div>
       </div>
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-4 rounded card3">
+          <div class="col-4 rounded card3 grow">
             <a href="#"><img src="img/Gold.png" alt="person1"></a>
-            <p>Everything Included In Silver<br>Full Diving Suit<br>Light Oxygen Tank<br><a href="#">More info</a></p>
+            <p>Everything Included In Silver<br>Full Diving Suit<br>Light Oxygen Tank<br><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">More info</a></p>
           </div>
           <div class="col-2">
           </div>
-          <div class="col-4 platinum-img rounded card4">
+          <div class="col-4 platinum-img rounded card4 grow">
             <a href="#"><img src="img/Platinum.png" alt="person2"></a>
-            <p>Everything Included In Gold<br>Double Chamber Oxygen Tank<br>Luxury Transportation & Amenities<br><a href="#">More info</a></p>
+            <p>Everything Included In Gold<br>Double Chamber Oxygen Tank<br>Luxury Transportation & Amenities<br><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">More info</a></p>
           </div>
         </div>
       </div>
@@ -112,13 +115,6 @@
           <img src="img/1st_para_img(3).png">
         </div>
       </div>
-      <div class="row centered">
-        <div class="col-2">
-        </div>
-        <div class="col-10">
-          <button>Watch Video</button>
-        </div>
-      </div>
     </div>
   </section>
   <section class="grad-2">
@@ -142,13 +138,6 @@
             ensure you don't have to worry about it. Depending on the package you buy, we can give you some of the best luxories in the world. Not only that, we'll give you top notch hospitality
             at the nearest country, so you're wait time to dive is unhindered and stress free.
           </p>
-        </div>
-      </div>
-      <div class="row centered">
-        <div class="col-8">
-        </div>
-        <div class="col-4">
-          <button>Watch Video</button>
         </div>
       </div>
     </div>
@@ -184,7 +173,7 @@
         <div class="col-3">
           <h3>Others</h3><br>
           <ul>
-            <li class="hidden"><a href="#">About us Video</a></li>
+            <li class="hidden"><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">About us Video</a></li>
             <li class="hidden"><a href="#">About the Mariana Trench</a></li>
           </ul>
         </div>
@@ -194,5 +183,111 @@
       </div>
     </div>
   </footer>
-</body>
+</body> 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Video shall go here</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video></video>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2nd Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header modal-header-color">
+        <h5 class="modal-title col-12" id="exampleModalLabel">Bronze Package</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+        The bronze package is the most affordable version of the trip:<br><br>
+        -Airline ticket to closest city<br>
+        -Hotel room with basic amenities<br>
+        -Meal vouchers of choice<br>
+        -Basic Transportation in city<br>
+        -Transportation to trench<br>
+        -Sea Flippers<br>
+        -Sea Goggles<br>
+        -Designated Guide<br>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 3rd Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header modal-header-color2">
+        <h5 class="modal-title col-12" id="exampleModalLabel">Silver Package</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+        The Silver package includes everything from the Bronze package<br><br>
+        -Business class ticket to closest city<br>
+        -Hotel room with premium amenities<br>
+        -Meal vouchers of choice<br>
+        -Private transportation in city<br>
+        -Yatch transportation to trench<br>
+        -Premium Diving Suit<br>
+        -Full diving Mask<br>
+        -Designated Guide<br>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 4th Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header modal-header-color3">
+        <h5 class="modal-title col-12" id="exampleModalLabel">Gold Package</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+        The Gold package includes everything from the Silver package<br><br>
+        -1st class ticket to closest city<br>
+        -Private Suit with designated caretakers<br>
+        -Exclusive 5 star resturant plan<br>
+        -Personal driver in city<br>
+        -Yatch transportation to trench<br>
+        -Light oxygen tank<br>
+        -Designated Guide<br>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 5th Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header modal-header-color4">
+        <h5 class="modal-title col-12" id="exampleModalLabel">Platinum Package</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+        The Platinum package includes everything we can offer<br><br>
+        -Exclusive private jet with full amenities<br>
+        -Private penthouse with staff 24/7<br>
+        -Private Chef on duty 24/7<br>
+        -Limo with full accomidations 24/7<br>
+        -Luxory Yatch with full amenities<br>
+        -Double cylinder oxygen tank<br>
+        -Full guide team for each member going<br>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
 </html>
