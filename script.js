@@ -30,3 +30,11 @@ function scrollBar(){
 }
 
 window.addEventListener('scroll', scrollBar);
+
+var loader = document.getElementById("preloader");
+
+setInterval(function loadingScreen(){
+    loader.style.display = "none";
+},500);
+
+window.addEventListener('load', loadingScreen);
