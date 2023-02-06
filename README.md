@@ -2,3 +2,8 @@
 Our website sells an experience to dive to the bottom of the mariana trench and back.
 
 In case it isn't obvious, it's impossible to dive to the mariana trench and back, and you will die for every reason imaginable :)
+
+Stuff to do///
+Make the paragraphs readable for a 3 year old
+icons
+resize compatibility
