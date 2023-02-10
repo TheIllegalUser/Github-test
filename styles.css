@@ -953,5 +953,5 @@ div .dot {
 }
 
 .modal-open > :not(.modal) {
-  filter: blur(1.5rem);
+  filter: blur(3rem);
 }
