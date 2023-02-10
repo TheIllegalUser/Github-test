@@ -1024,3 +1024,7 @@ $color2: #D93A54;
     position: fixed;
     z-index: 100;
 }
+
+.modal-open > :not(.modal) {
+    filter: blur(10px);
+}
