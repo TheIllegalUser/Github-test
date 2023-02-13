@@ -35,6 +35,7 @@ var loader = document.getElementById("preloader");
 
 setInterval(function loadingScreen(){
     loader.style.display = "none";
-},750);
+},250);
 
 window.addEventListener('load', loadingScreen);
+
