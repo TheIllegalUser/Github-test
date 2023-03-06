@@ -82,6 +82,7 @@ nav a{
     text-decoration: none;
     font-size: 2rem;
     color: white;
+    transition-duration: .5s;
 }
 
 @media(min-width: 992px) {
@@ -98,6 +99,12 @@ nav a{
         padding: 3rem 4rem;
         font-size: 2rem;
     }
+}
+
+nav a:hover{
+    transform: translate(0, -5px);
+    transition-duration: .5s;
+    color: #F78D78;
 }
 
 nav li{
