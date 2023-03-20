@@ -303,10 +303,6 @@ button:hover{
   text-decoration: none;
 }
 
-.graph-third-para img {
-  margin-top: 10rem;
-}
-
 .graph-third-para2 img {
   margin-left: 8rem;
   margin-top: 6rem;
@@ -959,13 +955,9 @@ div .dot {
   z-index: 100;
 }
 
-.modal-open > :not(.modal) {
-  filter: blur(3rem);
-}
-
 .floating {
   animation-name: floating;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -975,9 +967,14 @@ div .dot {
     transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0, 15px);
+    transform: translate(0, 30px);
   }
   100% {
     transform: translate(0, 0px);
   }
+}
+.para-buttons {
+  margin-left: 1rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.7rem;
 }
