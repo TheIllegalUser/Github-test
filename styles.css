@@ -975,7 +975,7 @@ div .dot {
 }
 .floating_title {
   animation-name: floating_title;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -996,25 +996,3 @@ div .dot {
   padding: 0.8rem 1.8rem;
   font-size: 1.7rem;
 }
-
-.floating_rotation {
-  animation-name: floating_rotation;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes floating_rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(2.5deg);
-  }
-  75% {
-    transform: rotate(-2.5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}/*# sourceMappingURL=styles.css.map */
