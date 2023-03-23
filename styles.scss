@@ -157,11 +157,7 @@ button{
         padding: .8rem 1rem;
     }
 }
-/*
-button:hover{
-    
-}
-*/
+
 .red{
     background: rgb(244,145,125);
     background: linear-gradient(135deg, rgba(244,145,125,1) 0%, rgba(247,141,120,1) 100%);
@@ -177,6 +173,7 @@ button:hover{
     padding: .75rem 1.1rem;
     font-size: 1.75rem;
     margin: 1rem -1px;
+    box-shadow: 0 0 20px 1px #fff;
 }
 
 
@@ -606,6 +603,7 @@ footer a:hover{
 
 .grow:hover{
     transform: scale(1.05);
+    box-shadow: 0 0 20px 5px #fff;
 }
 
 ::-webkit-scrollbar{
@@ -1059,4 +1057,5 @@ $color2: #D93A54;
     margin-left: 1rem;
     padding: .8rem 1.8rem;
     font-size: 1.7rem;
+    box-shadow: 0 0 20px 1px #fff;
 }
