@@ -1040,19 +1040,6 @@ $color2: #D93A54;
     100%   { transform: translate(0, -0px); }   
 }
 
-.floating_title { 
-    animation-name: floating_title;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes floating_title {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
-}
-
 .para-buttons{
     margin-left: 1rem;
     padding: .8rem 1.8rem;

@@ -33,9 +33,16 @@ window.addEventListener('scroll', scrollBar);
 
 var loader = document.getElementById("preloader");
 
-setInterval(function loadingScreen(){
+function loadingScreen(){
     loader.style.display = "none";
-},250);
+}
 
 window.addEventListener('load', loadingScreen);
 
+document.body.classList.add('js-loading');
+
+window.addEventListener("load", showPage);
+
+function showPage() {
+  document.body.classList.remove('js-loading');
+}
