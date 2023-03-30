@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 *{
     font-family: 'Patrick Hand', cursive;
-    z-index: 2;
 }
 
+body{
+    overflow-x: hidden;
+}
 /*body::before {
     content: "XS";
     color: red;
@@ -1040,9 +1042,163 @@ $color2: #D93A54;
     100%   { transform: translate(0, -0px); }   
 }
 
+.floating2 { 
+    animation-name: floating2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 30px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 .para-buttons{
     margin-left: 1rem;
     padding: .8rem 1.8rem;
     font-size: 1.7rem;
     box-shadow: 0 0 20px 1px #fff;
+}
+
+
+.slider{
+    height: 500px;
+    width: 819px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+  }
+  
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+.slides input{
+    display: none;
+  }
+  
+.slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+.slide img{
+    width: 350px;
+    height: auto;
+  }
+  
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+.manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+#radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+#radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+#radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+#radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 600px;
+  }
+  
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+     
+.bronze-header h2{
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.bronze-header h2:hover{
+    color:#7f523a;
+}
+     
+.silver-header h2{
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.silver-header h2:hover{
+    color: #BCC4C4;
+}
+     
+.gold-header h2{
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.gold-header h2:hover{
+    color:#f0fc11;
+}
+     
+.platinum-header h2{
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.platinum-header h2:hover{
+    color:#4ebff4;
 }

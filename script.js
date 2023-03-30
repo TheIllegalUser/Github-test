@@ -46,3 +46,12 @@ window.addEventListener("load", showPage);
 function showPage() {
   document.body.classList.remove('js-loading');
 }
+
+var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 4000);
