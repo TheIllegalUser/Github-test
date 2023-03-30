@@ -5,7 +5,7 @@ In case it isn't obvious, it's impossible to dive to the mariana trench and back
 
 Stuff to do///
 resize compatibility
-an entire page of (php?)
 Youtube
 Instagram
 twitter
+CLONE THIS
