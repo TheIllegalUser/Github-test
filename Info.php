@@ -37,18 +37,18 @@
     <div class="container">
       <div class="row">
         <div class="d-none d-md-block col-md-1 col-lg-2">
-          <a href="index.html"><img src="img/Logo.png" alt="logo"></a>
+          <a href="index.php"><img src="img/Logo.png" alt="logo"></a>
         </div>
         <div class="col-xs-12 col-md-7 col-lg-7 nav-text">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Info.html">Info</a></li>
-            <li><a href="Packages.html">Packages</a></li>
+            <li><a class="white_glow_big" href="index.php">Home</a></li>
+            <li><a class="white_glow_big" href="Info.php">Info</a></li>
+            <li><a class="white_glow_big" href="Packages.php">Packages</a></li>
           </ul>
         </div>
         <div class="d-none d-md-block col-md-4 col-lg-3">
           <div class="centered">
-            <button onclick="location.href='sign_up.html'" type="button" class="red rounded grow">Sign Up</button>
+            <button onclick="location.href='sign_up.php'" type="button" class="red rounded grow">Sign Up</button>
             <button class="rounded grow" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Watch Video</button>
           </div>
         </div>
@@ -58,15 +58,15 @@
     <div class="container title-text">
       <div class="row">
         <div class="col-12">
-        <h1>The Mariana Trench</h1>
-        <p class="info-para-text hidden">"Limitless and immortal, the waters are the beginning and end of all things on earth.” — Heinrich Zimmer</p>
+        <h1 class="white_glow_big">The Mariana Trench</h1>
+        <p class="info-para-text hidden white_glow_big">"Limitless and immortal, the waters are the beginning and end of all things on earth.” — Heinrich Zimmer</p>
       </div>
       </div>
       <div class="row">
         <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-4">
         </div>
         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2 centered title-buttons hidden">
-          <button onclick="location.href='sign_up.html'" type="button" class="red rounded grow">Sign Up</button>
+          <button onclick="location.href='sign_up.php'" type="button" class="red rounded grow">Sign Up</button>
         </div>
         <div class="col-6 col-md-3 col-lg-3 col-xl-2 centered title-buttons hidden">
           <button class="rounded grow" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Watch Video</button>
@@ -97,7 +97,7 @@
     <div class="container hidden">
       <div class="row">
         <div class="col-6">
-          <h2>The Depth of the Abyss</h2>
+          <h2 class="white_glow_big">The Depth of the Abyss</h2>
           <p>The Mariana Trench, extending over 7 miles deep, is 1.5 miles deeper than the summit of Mount Everest, the tallest point on Earth.
              Yet, with our 100% success rate, we assure you that reaching the bottom of this unfathomable abyss is within your grasp.
             Be one of the daring few to embark on this once-in-a-lifetime journey, and explore the mysteries of the deepest point on our planet.
@@ -125,7 +125,7 @@
             <img src="img/2nd_para_img(2).png">
           </div>
         <div class="col-6">
-          <h2>The weight of the entire ocean</h2>
+          <h2 class="white_glow_big">The weight of the entire ocean</h2>
           <p>At the depths of the Mariana Trench lies the Challenger Deep, the most extreme place on earth,
              with over 7 miles of ocean weighing down upon you -- that's the equivalent of 1.6 thousand elephants resting on your head. 
              But fear not, we are confident that your warrior spirit will prevail, and you will emerge victorious. 
@@ -145,23 +145,40 @@
     <p>&nbsp</p>
   </section>
   <section class="third-body">
-    <div class="container hidden">
-      <div class="row">
-        <div class="col-6">
-          <h2>Life at the bottom</h2>
-          <p>Life thrives even in the depths of the Mariana Trench, with gnarly creatures that may send shivers down the spines of some. 
-            But we know you're not like most people. With your confidence, bravery, and purpose-driven mindset, 
-            these creatures won't stand a chance against you.
-            <br><br>Some animals you could find are the <a href="https://cdn.mos.cms.futurecdn.net/66dYRQEDpcUN9jKAzuxAc9.jpg" target="_blank">
-            Frilled Shark</a>, <a href="https://i.guim.co.uk/img/media/68f47e73c12738a7d1ae5d9a596dad5cd44a9a84/0_0_7500_4500/master/7500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=b7952ce582b49c61fab29e47760299f1" target="_blank">Zombie Worms</a>,
-            and <a href="https://d.newsweek.com/en/full/2141007/vampire-squid-vampyroteuthis-infernalis.png" target="_blank">Vampire Squid</a>.
-          </p>
+    <h2 class="the-founders col-12 floating3">The Founders</h2>
+      <div class="person hidden floating3">
+        <div class="container3rd">
+          <div class="container-inner">
+            <img class="circle">
+            <img class="img img1" src="img/YourboiJosh.png">
+          </div>
         </div>
-      <div class="col-6 graph-third-para graph-third-para2 floating">
-        <img src="img/3rd_para_img(2).png">
+        <div class="divider"></div>
+        <div class="name pink_glow_big">Josh</div>
+        <div class="title">Co-CEO of Expedition Mariana</div>
       </div>
-    </div>
-    </div>
+      <div class="person hidden floating3">
+        <div class="container3rd">
+          <div class="container-inner">
+            <img class="circle">
+            <img class="img img2" src="img/Javier.png">
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="name pink_glow_big">Javier</div>
+        <div class="title">Co-CEO of Expedition Mariana</div>
+      </div>
+      <div class="person hidden floating3">
+        <div class="container3rd">
+          <div class="container-inner">
+            <img class="circle">
+            <img class="img img3" src="img/Donovan.png">
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="name pink_glow_big">Donovan</div>
+        <div class="title">In-House Counsel</div>
+      </div>
   </section>
   <section class="grad-3">
     <p>&nbsp</p>
@@ -195,7 +212,7 @@
           <h3><i class="fa-solid fa-link"></i> Others</h3><br>
           <ul>
             <li class="hidden"><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa-solid fa-video"></i> About us Video</a></li>
-            <li class="hidden"><a href="#"><i class="fa-solid fa-question"></i> About the Mariana Trench</a></li>
+            <li class="hidden"><a href="Info.php"><i class="fa-solid fa-question"></i> About the Mariana Trench</a></li>
           </ul>
         </div>
         <div class="col-3">

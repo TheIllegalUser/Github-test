@@ -1,15 +1,17 @@
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
+    if (entry.isIntersecting) {
+    entry.target.classList.add('show');
+    observer.unobserve(entry.target);
+    }
     });
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-
-hiddenElements.forEach((wrapper) => observer.observe(wrapper));
+    }, {
+    threshold: 0.25 
+    });
+    
+    const animatedElements = document.querySelectorAll('.hidden');
+    
+    animatedElements.forEach((element) => observer.observe(element));
 
 window.onscroll = function(){
 
@@ -54,4 +56,5 @@ var counter = 1;
       if(counter > 4){
         counter = 1;
       }
-    }, 4000);
+    }, 10000);
+
