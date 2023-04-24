@@ -59,8 +59,8 @@
     <div class="container title-text">
       <div class="row">
         <div class="col-12">
-        <h1 class="title_screen_glow">Sign Up</h1>
-        <p class="hidden title_screen_glow">Ready to <span class="quotationcolorswap" id="scroll-down-button">Embark</span> on your journey?</p>
+        <h1 class="title_screen_glow">Congratulations!</h1>
+        <p class="hidden title_screen_glow">You Are Officially Signed Up! Below Are Some Important Details</p>
         </div>
       </div>
     </div>
@@ -82,30 +82,31 @@
       <div><span class="dot"></span></div>
       <div><span class="dot"></span></div>
     </div>
-  <section class="first-body sign-up-body" id="part-1"> 
-    <div class="container level_one_body" id="content">
-      <form action="includes/sign_up.inc.php" method="POST">
+    <section class="third-body sign-up-body">
+      <div class="container hidden">
         <div class="row">
-          <div class="col-7">
-            <img src="img/Form_floater.png" alt="floaty boi" class="floating" style="margin-left: 5rem;">
+          <div class="col-6 graph-third-para floating">
+            <img src="img/Sign_Up.png">
           </div>
-          <div class="col-5">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="username" autocomplete="off" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" autocomplete="off" required>
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" autocomplete="off" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" autocomplete="off" required>
-            <div class="submit_button">
-            <input type="submit" name="submit" value="Sign Up" class="red rounded grow">
-            </div>
+          <div class="col-6">
+            <h2 class="white_glow_big">Congratulations </h2>
+            <p>
+            Your trip will be one week from now.
+            Please bring $47,500 in a disguised, unmarked bag, to a location that will be sent to your email.<br>
+            Dont have that much money? Here's a tip. The goverment is much more leniant with giving loans to students.<br>
+            Our team will be in touch with you via email!
+            </p>
           </div>
         </div>
-      </form>
-    </div>
-  </section>
+        <div class="row centered">
+          <div class="col-7">
+          </div>
+          <div class="col-4">
+            <button style="margin-bottom: 10rem; margin-left: 7.5rem;" class="rounded grow para-buttons"><a href="index.php">Return Home</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
   <footer>
     <div class="container">
       <div class="row">
@@ -139,20 +140,4 @@
     </div>
   </footer>
 </body>
-<!---->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-    <div class="modal-content">
-      <div class="modal-body modal-decorator-body">
-      <p>&nbsp</p>
-      <br>
-      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id='closebutton'>close</button>
-      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="801" height="450" type="text/html" src="https://www.youtube.com/embed/h7pmtxvM0RI?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
-      <p>&nbsp</p>
-      <br>
-      </div>
-    </div>
-  </div>
-</div>
-<!---->
 </html>

@@ -1,3 +1,22 @@
+<?php
+header("Cache-Control: no-cache, must-revalidate"); // force browser to always request the latest version of the page
+header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // set a past expiration date
+
+// clear all cache-related headers
+header("Pragma: no-cache");
+header("Surrogate-Control: no-store");
+header("Vary: *");
+
+// clear session cache
+session_cache_limiter('nocache');
+session_start();
+session_destroy();
+
+// clear OPcache (if enabled)
+if (function_exists('opcache_reset')) {
+    opcache_reset();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -9,7 +28,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/e8b3e939ce.js" crossorigin="anonymous"></script>
-<body>
+<body class="cursor1">
   <div id="preloader">
   <div class="sea">
     <div class="circle-wrapper">
@@ -59,8 +78,8 @@
     <div class="container title-text">
       <div class="row">
         <div class="col-12">
-        <h1 class="white_glow_big">Expedition Mariana</h1>
-        <p class="hidden white_glow_big">A Once In A Lifetime Opportunity</p>
+        <h1 class="title_screen_glow">Expedition Mariana</h1>
+        <p class="hidden title_screen_glow">A Once In A Lifetime Opportunity</p>
       </div>
       </div>
       <div class="row">
@@ -97,10 +116,10 @@
     </div>
     <div class="container hidden">
       <div class="row">
-        <div class="col-6 graph-first-para floating floating_rotation">
+        <div class="col-sm-0 col-xl-6 graph-first-para floating">
           <img src="img/1st_para_img.png" alt="this is supposed to be an image lol">
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-xl-6">
           <h2 class="white_glow_big">Experience The Greatest Unknowns</h2>
           <p>Join us on a heroic journey to conquer the deepest point on Earth - the Mariana Trench.
              While many have scaled the highest peak, the mysteries of the ocean's depths remain uncharted.
@@ -109,9 +128,9 @@
         </div>
       </div>
       <div class="row centered">
-        <div class="col-8">
+        <div class="col-5 col-xl-8">
         </div>
-        <div class="col-4">
+        <div class="col-6 col-xl-4">
           <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="rounded grow para-buttons">Watch Video</button>
         </div>
       </div>
@@ -186,10 +205,10 @@
   <section class="third-body">
     <div class="container hidden">
       <div class="row">
-        <div class="col-6 graph-third-para floating">
+        <div class="col-sm-0 col-xl-6 graph-third-para floating">
           <img src="img/3rd_para_img.png">
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-xl-6">
           <h2 class="white_glow_big">We Promise a 100% Refund</h2>
           <p>Our 100% refund guarantee ensures your complete satisfaction with no strings attached. 
             If for any reason you're not satisfied with your dive, simply ask for a full refund. 
@@ -199,9 +218,9 @@
         </div>
       </div>
       <div class="row centered">
-        <div class="col-8">
+        <div class="col-5 col-xl-8">
         </div>
-        <div class="col-4">
+        <div class="col-6 col-xl-4">
           <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="rounded grow para-buttons">Watch Video</button>
         </div>
       </div>
@@ -219,7 +238,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-4 col-xl-3">
           <h3><i class="fa-sharp fa-solid fa-phone-volume"></i> Contact Us</h3><br>
           <ul>
             <li class="hidden"><a href="#"><i class="fa-solid fa-phone"></i> (731)616-0706</a></li>
@@ -227,43 +246,42 @@
             <li class="hidden"><a href="#"><i class="fa-solid fa-phone"></i> (731)298-1218</a></li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-4 col-xl-3">
           <h3><i class="fa-solid fa-share-nodes"></i> Our Socials</h3><br>
           <ul>
             <li class="hidden"><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
-            <li class="hidden"><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li class="hidden"><a href="#" style="font-size:20px;"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
             <li class="hidden"><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-4 col-xl-3">
           <h3><i class="fa-solid fa-link"></i> Other Links</h3><br>
           <ul>
             <li class="hidden"><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter""><i class="fa-solid fa-video"></i> About us Video</a></li>
             <li class="hidden"><a href="info.php"><i class="fa-solid fa-question"></i> About the Mariana Trench</a></li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-0 col-xl-3">
           <a href="#"><img src="img/Logo.png" alt="image" height="200px"></a>
         </div>
       </div>
     </div>
   </footer>
 </body>
-<!-- Modal -->
+<!---->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Video shall go here</h5>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video></video>
+      <div class="modal-body modal-decorator-body">
+      <p>&nbsp</p>
+      <br>
+      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id='closebutton'>close</button>
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="801" height="450" type="text/html" src="https://www.youtube.com/embed/h7pmtxvM0RI?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+      <p>&nbsp</p>
+      <br>
       </div>
     </div>
   </div>
 </div>
-<!-- End Modal -->
+<!---->
 </html>

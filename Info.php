@@ -58,8 +58,8 @@
     <div class="container title-text">
       <div class="row">
         <div class="col-12">
-        <h1 class="white_glow_big">The Mariana Trench</h1>
-        <p class="info-para-text hidden white_glow_big">"Limitless and immortal, the waters are the beginning and end of all things on earth.” — Heinrich Zimmer</p>
+        <h1 class="title_screen_glow">The Depth of The Sea</h1>
+        <p class="info-para-text hidden title_screen_glow">"Limitless and immortal, the waters are the beginning and end of all things on earth.” — Heinrich Zimmer</p>
       </div>
       </div>
       <div class="row">
@@ -222,21 +222,20 @@
     </div>
   </footer>
 </body>
-<!-- Modal -->
+<!---->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Video shall go here</h5>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video></video>
+      <div class="modal-body modal-decorator-body">
+      <p>&nbsp</p>
+      <br>
+      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id='closebutton'>close</button>
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="801" height="450" type="text/html" src="https://www.youtube.com/embed/h7pmtxvM0RI?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+      <p>&nbsp</p>
+      <br>
       </div>
     </div>
   </div>
 </div>
-<!-- End Modal -->
+<!---->
 </html>
