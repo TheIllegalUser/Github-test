@@ -1,21 +1,4 @@
 <?php
-header("Cache-Control: no-cache, must-revalidate"); // force browser to always request the latest version of the page
-header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // set a past expiration date
-
-// clear all cache-related headers
-header("Pragma: no-cache");
-header("Surrogate-Control: no-store");
-header("Vary: *");
-
-// clear session cache
-session_cache_limiter('nocache');
-session_start();
-session_destroy();
-
-// clear OPcache (if enabled)
-if (function_exists('opcache_reset')) {
-    opcache_reset();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
