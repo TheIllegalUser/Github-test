@@ -56,5 +56,5 @@ var counter = 1;
       if(counter > 4){
         counter = 1;
       }
-    }, 10000);
+    }, 2500);
 
